@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.chess{
+    background-color: aqua;
+    width: min(100vh, 100vw);
+    height: min(100vh, 100vw);
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    
+    padding: 5px;
+}
+
+.chess div{
+   
+    
+    font-size: 40px;
+}
+
+.whitesquires:nth-child(even){
+    background-color: black;
+    color: white;
+}
+
+.whitesquires:nth-child(odd){
+    background-color: white;
+}
+
+.blacksquires:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+
+.blacksquires:nth-child(even){
+    background-color: white;
+}
